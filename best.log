@@ -1,0 +1,898 @@
+filename: ./data/sample.dat
+------------------------
+numvars: 	7
+numconss: 	5
+constant: 	31000.000
+obj.f:
+-1000.000 -1450.000 -1000.000 -950.000 -1500.000 -1500.000 -1500.000 
+constraints:
+C0: 2 1 0 0 0 0 1 <= 10
+C1: 0 0 1 1 0 0 0 <= 20
+C2: 0 2 0 1 1 0 1 <= 15
+C3: 0 0 0 0 2 1 0 <= 8
+C4: 0 0 1 0 0 2 1 <= 9
+------------------------
+**********************************
+var_x: 0 0 0 0 4 0 0 
+var_y: -10 -20 -11 0 -9 
+objval: 25000.000
+**********************************
+-- var_0 ---
+ind = 0, y_0 = -10, stepsize = 5
+candstepsize = 5, delta = -5000.000000
+-- var_1 ---
+ind = 0, y_0 = -10, stepsize = 10
+ind = 2, y_2 = -11, stepsize = 5
+candstepsize = 5, delta = -7250.000000
+-- var_2 ---
+ind = 1, y_1 = -20, stepsize = 20
+ind = 4, y_4 = -9, stepsize = 9
+candstepsize = 9, delta = -9000.000000
+-- var_3 ---
+ind = 1, y_1 = -20, stepsize = 20
+ind = 2, y_2 = -11, stepsize = 11
+candstepsize = 11, delta = -10450.000000
+-- var_4 ---
+ind = 2, y_2 = -11, stepsize = 11
+ind = 3, y_3 = 0
+candstepsize = 0, delta = 0.000000
+-- var_5 ---
+ind = 3, y_3 = 0
+candstepsize = 0, delta = 0.000000
+-- var_6 ---
+ind = 0, y_0 = -10, stepsize = 10
+ind = 2, y_2 = -11, stepsize = 11
+ind = 4, y_4 = -9, stepsize = 9
+candstepsize = 9, delta = -13500.000000
+bestindex = 6, beststepsize = 9, bestdelta = -13500.000000
+**********************************
+var_x: 0 0 0 0 4 0 9 
+var_y: -1 -20 -2 0 0 
+objval: 11500.000
+**********************************
+-- var_0 ---
+ind = 0, y_0 = -1, stepsize = 0
+candstepsize = 0, delta = 0.000000
+-- var_1 ---
+ind = 0, y_0 = -1, stepsize = 1
+ind = 2, y_2 = -2, stepsize = 1
+candstepsize = 1, delta = -1450.000000
+-- var_2 ---
+ind = 1, y_1 = -20, stepsize = 20
+ind = 4, y_4 = 0
+candstepsize = 0, delta = 0.000000
+-- var_3 ---
+ind = 1, y_1 = -20, stepsize = 20
+ind = 2, y_2 = -2, stepsize = 2
+candstepsize = 2, delta = -1900.000000
+-- var_4 ---
+ind = 2, y_2 = -2, stepsize = 2
+ind = 3, y_3 = 0
+candstepsize = 0, delta = 0.000000
+-- var_5 ---
+ind = 3, y_3 = 0
+candstepsize = 0, delta = 0.000000
+-- var_6 ---
+ind = 0, y_0 = -1, stepsize = 1
+ind = 2, y_2 = -2, stepsize = 2
+ind = 4, y_4 = 0
+candstepsize = 0, delta = 0.000000
+bestindex = 3, beststepsize = 2, bestdelta = -1900.000000
+**********************************
+var_x: 0 0 0 2 4 0 9 
+var_y: -1 -18 0 0 0 
+objval: 9600.000
+**********************************
+-- var_0 ---
+ind = 0, y_0 = -1, stepsize = 0
+candstepsize = 0, delta = 0.000000
+-- var_1 ---
+ind = 0, y_0 = -1, stepsize = 1
+ind = 2, y_2 = 0
+candstepsize = 0, delta = 0.000000
+-- var_2 ---
+ind = 1, y_1 = -18, stepsize = 18
+ind = 4, y_4 = 0
+candstepsize = 0, delta = 0.000000
+-- var_3 ---
+ind = 1, y_1 = -18, stepsize = 18
+ind = 2, y_2 = 0
+candstepsize = 0, delta = 0.000000
+-- var_4 ---
+ind = 2, y_2 = 0
+candstepsize = 0, delta = 0.000000
+-- var_5 ---
+ind = 3, y_3 = 0
+candstepsize = 0, delta = 0.000000
+-- var_6 ---
+ind = 0, y_0 = -1, stepsize = 1
+ind = 2, y_2 = 0
+candstepsize = 0, delta = 0.000000
+bestindex = -1, beststepsize = 100, bestdelta = 0.000000
+**********************************
+var_x: 0 0 0 2 4 0 9 
+var_y: -1 -18 0 0 0 
+objval: 9600.000
+**********************************
+FLSsearchSol-----------------------------------
+**********************************
+var_x: 0 0 0 2 4 0 9 
+var_y: -1 -18 0 0 0 
+objval: 9600.000
+**********************************
+relaxlist: 2 3 4 
+penaltyrate: 5.000 5.000 0.500 0.500 0.500 
+-- var_0 ---
+p:k = 1
+ - ind = 0, y_0 = -1, p_0 = 5000.000000, f_b_0 = 0, c_b_0 = 1
+ - delta = 4000.000000, stepsize = 1
+canddelta = 0.000000, candstepsize = 0
+canddelta = 0.000000, candstepsize = 0
+-- var_1 ---
+p:k = 1
+ - ind = 0, y_0 = -1, p_0 = 7250.000000, f_b_0 = 1, c_b_0 = 2
+ - ind = 2, y_2 = 0, p_2 = 725.000000
+ - delta = 0.000000, stepsize = 1
+canddelta = 0.000000, candstepsize = 0
+canddelta = 0.000000, candstepsize = 0
+-- var_2 ---
+p:k = 1
+ - ind = 1, y_1 = -18, p_1 = 5000.000000, f_b_1 = 18, c_b_1 = 19
+ - ind = 4, y_4 = 0, p_4 = 500.000000
+ - delta = -500.000000, stepsize = 1
+p:k = 2
+ - ind = 1, y_1 = -18, p_1 = 5000.000000, f_b_1 = 18, c_b_1 = 19
+ - ind = 4, y_4 = 0, p_4 = 500.000000
+ - delta = -1000.000000, stepsize = 2
+p:k = 3
+ - ind = 1, y_1 = -18, p_1 = 5000.000000, f_b_1 = 18, c_b_1 = 19
+ - ind = 4, y_4 = 0, p_4 = 500.000000
+ - delta = -1500.000000, stepsize = 3
+p:k = 4
+ - ind = 1, y_1 = -18, p_1 = 5000.000000, f_b_1 = 18, c_b_1 = 19
+ - ind = 4, y_4 = 0, p_4 = 500.000000
+ - delta = -2000.000000, stepsize = 4
+p:k = 5
+ - ind = 1, y_1 = -18, p_1 = 5000.000000, f_b_1 = 18, c_b_1 = 19
+ - ind = 4, y_4 = 0, p_4 = 500.000000
+ - delta = -2500.000000, stepsize = 5
+p:k = 6
+ - ind = 1, y_1 = -18, p_1 = 5000.000000, f_b_1 = 18, c_b_1 = 19
+ - ind = 4, y_4 = 0, p_4 = 500.000000
+ - delta = -3000.000000, stepsize = 6
+p:k = 7
+ - ind = 1, y_1 = -18, p_1 = 5000.000000, f_b_1 = 18, c_b_1 = 19
+ - ind = 4, y_4 = 0, p_4 = 500.000000
+ - delta = -3500.000000, stepsize = 7
+p:k = 8
+ - ind = 1, y_1 = -18, p_1 = 5000.000000, f_b_1 = 18, c_b_1 = 19
+ - ind = 4, y_4 = 0, p_4 = 500.000000
+ - delta = -4000.000000, stepsize = 8
+p:k = 9
+ - ind = 1, y_1 = -18, p_1 = 5000.000000, f_b_1 = 18, c_b_1 = 19
+ - ind = 4, y_4 = 0, p_4 = 500.000000
+ - delta = -4500.000000, stepsize = 9
+p:k = 10
+ - ind = 1, y_1 = -18, p_1 = 5000.000000, f_b_1 = 18, c_b_1 = 19
+ - ind = 4, y_4 = 0, p_4 = 500.000000
+ - delta = -5000.000000, stepsize = 10
+canddelta = -5000.000000, candstepsize = 10
+canddelta = 0.000000, candstepsize = 0
+-- var_3 ---
+p:k = 1
+ - ind = 1, y_1 = -18, p_1 = 4750.000000, f_b_1 = 18, c_b_1 = 19
+ - ind = 2, y_2 = 0, p_2 = 475.000000
+ - delta = -475.000000, stepsize = 1
+p:k = 2
+ - ind = 1, y_1 = -18, p_1 = 4750.000000, f_b_1 = 18, c_b_1 = 19
+ - ind = 2, y_2 = 0, p_2 = 475.000000
+ - delta = -950.000000, stepsize = 2
+p:k = 3
+ - ind = 1, y_1 = -18, p_1 = 4750.000000, f_b_1 = 18, c_b_1 = 19
+ - ind = 2, y_2 = 0, p_2 = 475.000000
+ - delta = -1425.000000, stepsize = 3
+p:k = 4
+ - ind = 1, y_1 = -18, p_1 = 4750.000000, f_b_1 = 18, c_b_1 = 19
+ - ind = 2, y_2 = 0, p_2 = 475.000000
+ - delta = -1900.000000, stepsize = 4
+p:k = 5
+ - ind = 1, y_1 = -18, p_1 = 4750.000000, f_b_1 = 18, c_b_1 = 19
+ - ind = 2, y_2 = 0, p_2 = 475.000000
+ - delta = -2375.000000, stepsize = 5
+p:k = 6
+ - ind = 1, y_1 = -18, p_1 = 4750.000000, f_b_1 = 18, c_b_1 = 19
+ - ind = 2, y_2 = 0, p_2 = 475.000000
+ - delta = -2850.000000, stepsize = 6
+p:k = 7
+ - ind = 1, y_1 = -18, p_1 = 4750.000000, f_b_1 = 18, c_b_1 = 19
+ - ind = 2, y_2 = 0, p_2 = 475.000000
+ - delta = -3325.000000, stepsize = 7
+p:k = 8
+ - ind = 1, y_1 = -18, p_1 = 4750.000000, f_b_1 = 18, c_b_1 = 19
+ - ind = 2, y_2 = 0, p_2 = 475.000000
+ - delta = -3800.000000, stepsize = 8
+p:k = 9
+ - ind = 1, y_1 = -18, p_1 = 4750.000000, f_b_1 = 18, c_b_1 = 19
+ - ind = 2, y_2 = 0, p_2 = 475.000000
+ - delta = -4275.000000, stepsize = 9
+p:k = 10
+ - ind = 1, y_1 = -18, p_1 = 4750.000000, f_b_1 = 18, c_b_1 = 19
+ - ind = 2, y_2 = 0, p_2 = 475.000000
+ - delta = -4750.000000, stepsize = 10
+canddelta = -4750.000000, candstepsize = 10
+n:k = -1
+ - ind = 1, y_1 = -18, p_1 = 4750.000000
+ - ind = 2, y_2 = 0, p_2 = 475.000000
+ - delta = 950.000000, stepsize = -1
+canddelta = 0.000000, candstepsize = 0
+-- var_4 ---
+p:k = 1
+ - ind = 2, y_2 = 0, p_2 = 750.000000
+ - ind = 3, y_3 = 0, p_3 = 750.000000
+ - delta = 750.000000, stepsize = 1
+canddelta = 0.000000, candstepsize = 0
+n:k = -1
+ - ind = 2, y_2 = 0, p_2 = 750.000000
+ - ind = 3, y_3 = 0, p_3 = 750.000000
+ - delta = 1500.000000, stepsize = -1
+canddelta = 0.000000, candstepsize = 0
+-- var_5 ---
+p:k = 1
+ - ind = 3, y_3 = 0, p_3 = 750.000000
+ - ind = 4, y_4 = 0, p_4 = 750.000000
+ - delta = 750.000000, stepsize = 1
+canddelta = 0.000000, candstepsize = 0
+canddelta = 0.000000, candstepsize = 0
+-- var_6 ---
+p:k = 1
+ - ind = 0, y_0 = -1, p_0 = 7500.000000, f_b_0 = 1, c_b_0 = 2
+ - ind = 2, y_2 = 0, p_2 = 750.000000
+ - ind = 4, y_4 = 0, p_4 = 750.000000
+ - delta = 0.000000, stepsize = 1
+canddelta = 0.000000, candstepsize = 0
+n:k = -1
+ - ind = 0, y_0 = -1, p_0 = 7500.000000
+ - ind = 2, y_2 = 0, p_2 = 750.000000
+ - ind = 4, y_4 = 0, p_4 = 750.000000
+ - delta = 1500.000000, stepsize = -1
+canddelta = 0.000000, candstepsize = 0
+bestindex = 2, beststepsize = 10, bestdelta = -5000.000000
+**********************************
+var_x: 0 0 10 2 4 0 9 
+var_y: -1 -8 0 0 10 
+objval: -400.000
+**********************************
+penaltyrate: 5.000 5.000 0.500 0.500 1.500 
+-- var_0 ---
+p:k = 1
+ - ind = 0, y_0 = -1, p_0 = 5000.000000, f_b_0 = 0, c_b_0 = 1
+ - delta = 4000.000000, stepsize = 1
+canddelta = 0.000000, candstepsize = 0
+canddelta = 0.000000, candstepsize = 0
+-- var_1 ---
+p:k = 1
+ - ind = 0, y_0 = -1, p_0 = 7250.000000, f_b_0 = 1, c_b_0 = 2
+ - ind = 2, y_2 = 0, p_2 = 725.000000
+ - delta = 0.000000, stepsize = 1
+canddelta = 0.000000, candstepsize = 0
+canddelta = 0.000000, candstepsize = 0
+-- var_2 ---
+p:k = 1
+ - ind = 1, y_1 = -8, p_1 = 5000.000000, f_b_1 = 8, c_b_1 = 9
+ - ind = 4, y_4 = 10, p_4 = 1500.000000
+ - delta = 500.000000, stepsize = 1
+canddelta = 0.000000, candstepsize = 0
+n:k = -1
+ - ind = 1, y_1 = -8, p_1 = 5000.000000
+ - ind = 4, y_4 = 10, p_4 = 1500.000000, f_b_4 = -11, c_b_4 = -10
+ - delta = -500.000000, stepsize = -1
+n:k = -2
+ - ind = 1, y_1 = -8, p_1 = 5000.000000
+ - ind = 4, y_4 = 10, p_4 = 1500.000000, f_b_4 = -11, c_b_4 = -10
+ - delta = -1000.000000, stepsize = -2
+n:k = -3
+ - ind = 1, y_1 = -8, p_1 = 5000.000000
+ - ind = 4, y_4 = 10, p_4 = 1500.000000, f_b_4 = -11, c_b_4 = -10
+ - delta = -1500.000000, stepsize = -3
+n:k = -4
+ - ind = 1, y_1 = -8, p_1 = 5000.000000
+ - ind = 4, y_4 = 10, p_4 = 1500.000000, f_b_4 = -11, c_b_4 = -10
+ - delta = -2000.000000, stepsize = -4
+n:k = -5
+ - ind = 1, y_1 = -8, p_1 = 5000.000000
+ - ind = 4, y_4 = 10, p_4 = 1500.000000, f_b_4 = -11, c_b_4 = -10
+ - delta = -2500.000000, stepsize = -5
+n:k = -6
+ - ind = 1, y_1 = -8, p_1 = 5000.000000
+ - ind = 4, y_4 = 10, p_4 = 1500.000000, f_b_4 = -11, c_b_4 = -10
+ - delta = -3000.000000, stepsize = -6
+n:k = -7
+ - ind = 1, y_1 = -8, p_1 = 5000.000000
+ - ind = 4, y_4 = 10, p_4 = 1500.000000, f_b_4 = -11, c_b_4 = -10
+ - delta = -3500.000000, stepsize = -7
+n:k = -8
+ - ind = 1, y_1 = -8, p_1 = 5000.000000
+ - ind = 4, y_4 = 10, p_4 = 1500.000000, f_b_4 = -11, c_b_4 = -10
+ - delta = -4000.000000, stepsize = -8
+n:k = -9
+ - ind = 1, y_1 = -8, p_1 = 5000.000000
+ - ind = 4, y_4 = 10, p_4 = 1500.000000, f_b_4 = -11, c_b_4 = -10
+ - delta = -4500.000000, stepsize = -9
+n:k = -10
+ - ind = 1, y_1 = -8, p_1 = 5000.000000
+ - ind = 4, y_4 = 10, p_4 = 1500.000000, f_b_4 = -11, c_b_4 = -10
+ - delta = -5000.000000, stepsize = -10
+canddelta = -5000.000000, candstepsize = -10
+-- var_3 ---
+p:k = 1
+ - ind = 1, y_1 = -8, p_1 = 4750.000000, f_b_1 = 8, c_b_1 = 9
+ - ind = 2, y_2 = 0, p_2 = 475.000000
+ - delta = -475.000000, stepsize = 1
+p:k = 2
+ - ind = 1, y_1 = -8, p_1 = 4750.000000, f_b_1 = 8, c_b_1 = 9
+ - ind = 2, y_2 = 0, p_2 = 475.000000
+ - delta = -950.000000, stepsize = 2
+p:k = 3
+ - ind = 1, y_1 = -8, p_1 = 4750.000000, f_b_1 = 8, c_b_1 = 9
+ - ind = 2, y_2 = 0, p_2 = 475.000000
+ - delta = -1425.000000, stepsize = 3
+p:k = 4
+ - ind = 1, y_1 = -8, p_1 = 4750.000000, f_b_1 = 8, c_b_1 = 9
+ - ind = 2, y_2 = 0, p_2 = 475.000000
+ - delta = -1900.000000, stepsize = 4
+p:k = 5
+ - ind = 1, y_1 = -8, p_1 = 4750.000000, f_b_1 = 8, c_b_1 = 9
+ - ind = 2, y_2 = 0, p_2 = 475.000000
+ - delta = -2375.000000, stepsize = 5
+p:k = 6
+ - ind = 1, y_1 = -8, p_1 = 4750.000000, f_b_1 = 8, c_b_1 = 9
+ - ind = 2, y_2 = 0, p_2 = 475.000000
+ - delta = -2850.000000, stepsize = 6
+p:k = 7
+ - ind = 1, y_1 = -8, p_1 = 4750.000000, f_b_1 = 8, c_b_1 = 9
+ - ind = 2, y_2 = 0, p_2 = 475.000000
+ - delta = -3325.000000, stepsize = 7
+p:k = 8
+ - ind = 1, y_1 = -8, p_1 = 4750.000000, f_b_1 = 8, c_b_1 = 9
+ - ind = 2, y_2 = 0, p_2 = 475.000000
+ - delta = -3800.000000, stepsize = 8
+p:k = 9
+ - ind = 1, y_1 = -8, p_1 = 4750.000000, f_b_1 = 8, c_b_1 = 9
+ - ind = 2, y_2 = 0, p_2 = 475.000000
+ - delta = 475.000000, stepsize = 9
+canddelta = -3800.000000, candstepsize = 8
+n:k = -1
+ - ind = 1, y_1 = -8, p_1 = 4750.000000
+ - ind = 2, y_2 = 0, p_2 = 475.000000
+ - delta = 950.000000, stepsize = -1
+canddelta = 0.000000, candstepsize = 0
+-- var_4 ---
+p:k = 1
+ - ind = 2, y_2 = 0, p_2 = 750.000000
+ - ind = 3, y_3 = 0, p_3 = 750.000000
+ - delta = 750.000000, stepsize = 1
+canddelta = 0.000000, candstepsize = 0
+n:k = -1
+ - ind = 2, y_2 = 0, p_2 = 750.000000
+ - ind = 3, y_3 = 0, p_3 = 750.000000
+ - delta = 1500.000000, stepsize = -1
+canddelta = 0.000000, candstepsize = 0
+-- var_5 ---
+p:k = 1
+ - ind = 3, y_3 = 0, p_3 = 750.000000
+ - ind = 4, y_4 = 10, p_4 = 2250.000000
+ - delta = 3750.000000, stepsize = 1
+canddelta = 0.000000, candstepsize = 0
+canddelta = 0.000000, candstepsize = 0
+-- var_6 ---
+p:k = 1
+ - ind = 0, y_0 = -1, p_0 = 7500.000000, f_b_0 = 1, c_b_0 = 2
+ - ind = 2, y_2 = 0, p_2 = 750.000000
+ - ind = 4, y_4 = 10, p_4 = 2250.000000
+ - delta = 1500.000000, stepsize = 1
+canddelta = 0.000000, candstepsize = 0
+n:k = -1
+ - ind = 0, y_0 = -1, p_0 = 7500.000000
+ - ind = 2, y_2 = 0, p_2 = 750.000000
+ - ind = 4, y_4 = 10, p_4 = 2250.000000, f_b_4 = -11, c_b_4 = -10
+ - delta = -750.000000, stepsize = -1
+n:k = -2
+ - ind = 0, y_0 = -1, p_0 = 7500.000000
+ - ind = 2, y_2 = 0, p_2 = 750.000000
+ - ind = 4, y_4 = 10, p_4 = 2250.000000, f_b_4 = -11, c_b_4 = -10
+ - delta = -1500.000000, stepsize = -2
+n:k = -3
+ - ind = 0, y_0 = -1, p_0 = 7500.000000
+ - ind = 2, y_2 = 0, p_2 = 750.000000
+ - ind = 4, y_4 = 10, p_4 = 2250.000000, f_b_4 = -11, c_b_4 = -10
+ - delta = -2250.000000, stepsize = -3
+n:k = -4
+ - ind = 0, y_0 = -1, p_0 = 7500.000000
+ - ind = 2, y_2 = 0, p_2 = 750.000000
+ - ind = 4, y_4 = 10, p_4 = 2250.000000, f_b_4 = -11, c_b_4 = -10
+ - delta = -3000.000000, stepsize = -4
+n:k = -5
+ - ind = 0, y_0 = -1, p_0 = 7500.000000
+ - ind = 2, y_2 = 0, p_2 = 750.000000
+ - ind = 4, y_4 = 10, p_4 = 2250.000000, f_b_4 = -11, c_b_4 = -10
+ - delta = -3750.000000, stepsize = -5
+n:k = -6
+ - ind = 0, y_0 = -1, p_0 = 7500.000000
+ - ind = 2, y_2 = 0, p_2 = 750.000000
+ - ind = 4, y_4 = 10, p_4 = 2250.000000, f_b_4 = -11, c_b_4 = -10
+ - delta = -4500.000000, stepsize = -6
+n:k = -7
+ - ind = 0, y_0 = -1, p_0 = 7500.000000
+ - ind = 2, y_2 = 0, p_2 = 750.000000
+ - ind = 4, y_4 = 10, p_4 = 2250.000000, f_b_4 = -11, c_b_4 = -10
+ - delta = -5250.000000, stepsize = -7
+n:k = -8
+ - ind = 0, y_0 = -1, p_0 = 7500.000000
+ - ind = 2, y_2 = 0, p_2 = 750.000000
+ - ind = 4, y_4 = 10, p_4 = 2250.000000, f_b_4 = -11, c_b_4 = -10
+ - delta = -6000.000000, stepsize = -8
+n:k = -9
+ - ind = 0, y_0 = -1, p_0 = 7500.000000
+ - ind = 2, y_2 = 0, p_2 = 750.000000
+ - ind = 4, y_4 = 10, p_4 = 2250.000000, f_b_4 = -11, c_b_4 = -10
+ - delta = -6750.000000, stepsize = -9
+canddelta = -6750.000000, candstepsize = -9
+bestindex = 6, beststepsize = -9, bestdelta = -6750.000000
+**********************************
+var_x: 0 0 10 2 4 0 0 
+var_y: -10 -8 -9 0 1 
+objval: 13100.000
+**********************************
+penaltyrate: 5.000 5.000 0.500 0.500 1.600 
+-- var_0 ---
+p:k = 1
+ - ind = 0, y_0 = -10, p_0 = 5000.000000, f_b_0 = 5, c_b_0 = 6
+ - delta = -1000.000000, stepsize = 1
+p:k = 2
+ - ind = 0, y_0 = -10, p_0 = 5000.000000, f_b_0 = 5, c_b_0 = 6
+ - delta = -2000.000000, stepsize = 2
+p:k = 3
+ - ind = 0, y_0 = -10, p_0 = 5000.000000, f_b_0 = 5, c_b_0 = 6
+ - delta = -3000.000000, stepsize = 3
+p:k = 4
+ - ind = 0, y_0 = -10, p_0 = 5000.000000, f_b_0 = 5, c_b_0 = 6
+ - delta = -4000.000000, stepsize = 4
+p:k = 5
+ - ind = 0, y_0 = -10, p_0 = 5000.000000, f_b_0 = 5, c_b_0 = 6
+ - delta = -5000.000000, stepsize = 5
+p:k = 6
+ - ind = 0, y_0 = -10, p_0 = 5000.000000, f_b_0 = 5, c_b_0 = 6
+ - delta = 4000.000000, stepsize = 6
+canddelta = -5000.000000, candstepsize = 5
+canddelta = 0.000000, candstepsize = 0
+-- var_1 ---
+p:k = 1
+ - ind = 0, y_0 = -10, p_0 = 7250.000000, f_b_0 = 10, c_b_0 = 11
+ - ind = 2, y_2 = -9, p_2 = 725.000000, f_b_2 = 4, c_b_2 = 5
+ - delta = -1450.000000, stepsize = 1
+p:k = 2
+ - ind = 0, y_0 = -10, p_0 = 7250.000000, f_b_0 = 10, c_b_0 = 11
+ - ind = 2, y_2 = -9, p_2 = 725.000000, f_b_2 = 4, c_b_2 = 5
+ - delta = -2900.000000, stepsize = 2
+p:k = 3
+ - ind = 0, y_0 = -10, p_0 = 7250.000000, f_b_0 = 10, c_b_0 = 11
+ - ind = 2, y_2 = -9, p_2 = 725.000000, f_b_2 = 4, c_b_2 = 5
+ - delta = -4350.000000, stepsize = 3
+p:k = 4
+ - ind = 0, y_0 = -10, p_0 = 7250.000000, f_b_0 = 10, c_b_0 = 11
+ - ind = 2, y_2 = -9, p_2 = 725.000000, f_b_2 = 4, c_b_2 = 5
+ - delta = -5800.000000, stepsize = 4
+p:k = 5
+ - ind = 0, y_0 = -10, p_0 = 7250.000000, f_b_0 = 10, c_b_0 = 11
+ - ind = 2, y_2 = -9, p_2 = 725.000000, f_b_2 = 4, c_b_2 = 5
+ - delta = -6525.000000, stepsize = 5
+p:k = 6
+ - ind = 0, y_0 = -10, p_0 = 7250.000000, f_b_0 = 10, c_b_0 = 11
+ - ind = 2, y_2 = -9, p_2 = 725.000000, f_b_2 = 4, c_b_2 = 5
+ - delta = -6525.000000, stepsize = 6
+canddelta = -6525.000000, candstepsize = 5
+canddelta = 0.000000, candstepsize = 0
+-- var_2 ---
+p:k = 1
+ - ind = 1, y_1 = -8, p_1 = 5000.000000, f_b_1 = 8, c_b_1 = 9
+ - ind = 4, y_4 = 1, p_4 = 1600.000000
+ - delta = 600.000000, stepsize = 1
+canddelta = 0.000000, candstepsize = 0
+n:k = -1
+ - ind = 1, y_1 = -8, p_1 = 5000.000000
+ - ind = 4, y_4 = 1, p_4 = 1600.000000, f_b_4 = -2, c_b_4 = -1
+ - delta = -600.000000, stepsize = -1
+n:k = -2
+ - ind = 1, y_1 = -8, p_1 = 5000.000000
+ - ind = 4, y_4 = 1, p_4 = 1600.000000, f_b_4 = -2, c_b_4 = -1
+ - delta = 400.000000, stepsize = -2
+canddelta = -600.000000, candstepsize = -1
+-- var_3 ---
+p:k = 1
+ - ind = 1, y_1 = -8, p_1 = 4750.000000, f_b_1 = 8, c_b_1 = 9
+ - ind = 2, y_2 = -9, p_2 = 475.000000, f_b_2 = 9, c_b_2 = 10
+ - delta = -950.000000, stepsize = 1
+p:k = 2
+ - ind = 1, y_1 = -8, p_1 = 4750.000000, f_b_1 = 8, c_b_1 = 9
+ - ind = 2, y_2 = -9, p_2 = 475.000000, f_b_2 = 9, c_b_2 = 10
+ - delta = -1900.000000, stepsize = 2
+p:k = 3
+ - ind = 1, y_1 = -8, p_1 = 4750.000000, f_b_1 = 8, c_b_1 = 9
+ - ind = 2, y_2 = -9, p_2 = 475.000000, f_b_2 = 9, c_b_2 = 10
+ - delta = -2850.000000, stepsize = 3
+p:k = 4
+ - ind = 1, y_1 = -8, p_1 = 4750.000000, f_b_1 = 8, c_b_1 = 9
+ - ind = 2, y_2 = -9, p_2 = 475.000000, f_b_2 = 9, c_b_2 = 10
+ - delta = -3800.000000, stepsize = 4
+p:k = 5
+ - ind = 1, y_1 = -8, p_1 = 4750.000000, f_b_1 = 8, c_b_1 = 9
+ - ind = 2, y_2 = -9, p_2 = 475.000000, f_b_2 = 9, c_b_2 = 10
+ - delta = -4750.000000, stepsize = 5
+p:k = 6
+ - ind = 1, y_1 = -8, p_1 = 4750.000000, f_b_1 = 8, c_b_1 = 9
+ - ind = 2, y_2 = -9, p_2 = 475.000000, f_b_2 = 9, c_b_2 = 10
+ - delta = -5700.000000, stepsize = 6
+p:k = 7
+ - ind = 1, y_1 = -8, p_1 = 4750.000000, f_b_1 = 8, c_b_1 = 9
+ - ind = 2, y_2 = -9, p_2 = 475.000000, f_b_2 = 9, c_b_2 = 10
+ - delta = -6650.000000, stepsize = 7
+p:k = 8
+ - ind = 1, y_1 = -8, p_1 = 4750.000000, f_b_1 = 8, c_b_1 = 9
+ - ind = 2, y_2 = -9, p_2 = 475.000000, f_b_2 = 9, c_b_2 = 10
+ - delta = -7600.000000, stepsize = 8
+p:k = 9
+ - ind = 1, y_1 = -8, p_1 = 4750.000000, f_b_1 = 8, c_b_1 = 9
+ - ind = 2, y_2 = -9, p_2 = 475.000000, f_b_2 = 9, c_b_2 = 10
+ - delta = -3800.000000, stepsize = 9
+canddelta = -7600.000000, candstepsize = 8
+n:k = -1
+ - ind = 1, y_1 = -8, p_1 = 4750.000000
+ - ind = 2, y_2 = -9, p_2 = 475.000000
+ - delta = 950.000000, stepsize = -1
+canddelta = 0.000000, candstepsize = 0
+-- var_4 ---
+p:k = 1
+ - ind = 2, y_2 = -9, p_2 = 750.000000, f_b_2 = 9, c_b_2 = 10
+ - ind = 3, y_3 = 0, p_3 = 750.000000
+ - delta = 0.000000, stepsize = 1
+canddelta = 0.000000, candstepsize = 0
+n:k = -1
+ - ind = 2, y_2 = -9, p_2 = 750.000000
+ - ind = 3, y_3 = 0, p_3 = 750.000000
+ - delta = 1500.000000, stepsize = -1
+canddelta = 0.000000, candstepsize = 0
+-- var_5 ---
+p:k = 1
+ - ind = 3, y_3 = 0, p_3 = 750.000000
+ - ind = 4, y_4 = 1, p_4 = 2400.000000
+ - delta = 4050.000000, stepsize = 1
+canddelta = 0.000000, candstepsize = 0
+canddelta = 0.000000, candstepsize = 0
+-- var_6 ---
+p:k = 1
+ - ind = 0, y_0 = -10, p_0 = 7500.000000, f_b_0 = 10, c_b_0 = 11
+ - ind = 2, y_2 = -9, p_2 = 750.000000, f_b_2 = 9, c_b_2 = 10
+ - ind = 4, y_4 = 1, p_4 = 2400.000000
+ - delta = 900.000000, stepsize = 1
+canddelta = 0.000000, candstepsize = 0
+canddelta = 0.000000, candstepsize = 0
+bestindex = 3, beststepsize = 8, bestdelta = -7600.000000
+**********************************
+var_x: 0 0 10 10 4 0 0 
+var_y: -10 0 -1 0 1 
+objval: 5500.000
+**********************************
+penaltyrate: 5.000 5.000 0.500 0.500 1.700 
+-- var_0 ---
+p:k = 1
+ - ind = 0, y_0 = -10, p_0 = 5000.000000, f_b_0 = 5, c_b_0 = 6
+ - delta = -1000.000000, stepsize = 1
+p:k = 2
+ - ind = 0, y_0 = -10, p_0 = 5000.000000, f_b_0 = 5, c_b_0 = 6
+ - delta = -2000.000000, stepsize = 2
+p:k = 3
+ - ind = 0, y_0 = -10, p_0 = 5000.000000, f_b_0 = 5, c_b_0 = 6
+ - delta = -3000.000000, stepsize = 3
+p:k = 4
+ - ind = 0, y_0 = -10, p_0 = 5000.000000, f_b_0 = 5, c_b_0 = 6
+ - delta = -4000.000000, stepsize = 4
+p:k = 5
+ - ind = 0, y_0 = -10, p_0 = 5000.000000, f_b_0 = 5, c_b_0 = 6
+ - delta = -5000.000000, stepsize = 5
+p:k = 6
+ - ind = 0, y_0 = -10, p_0 = 5000.000000, f_b_0 = 5, c_b_0 = 6
+ - delta = 4000.000000, stepsize = 6
+canddelta = -5000.000000, candstepsize = 5
+canddelta = 0.000000, candstepsize = 0
+-- var_1 ---
+p:k = 1
+ - ind = 0, y_0 = -10, p_0 = 7250.000000, f_b_0 = 10, c_b_0 = 11
+ - ind = 2, y_2 = -1, p_2 = 725.000000, f_b_2 = 0, c_b_2 = 1
+ - delta = -725.000000, stepsize = 1
+p:k = 2
+ - ind = 0, y_0 = -10, p_0 = 7250.000000, f_b_0 = 10, c_b_0 = 11
+ - ind = 2, y_2 = -1, p_2 = 725.000000, f_b_2 = 0, c_b_2 = 1
+ - delta = -725.000000, stepsize = 2
+canddelta = -725.000000, candstepsize = 1
+canddelta = 0.000000, candstepsize = 0
+-- var_2 ---
+p:k = 1
+ - ind = 1, y_1 = 0, p_1 = 5000.000000
+ - ind = 4, y_4 = 1, p_4 = 1700.000000
+ - delta = 5700.000000, stepsize = 1
+canddelta = 0.000000, candstepsize = 0
+n:k = -1
+ - ind = 1, y_1 = 0, p_1 = 5000.000000
+ - ind = 4, y_4 = 1, p_4 = 1700.000000, f_b_4 = -2, c_b_4 = -1
+ - delta = -700.000000, stepsize = -1
+n:k = -2
+ - ind = 1, y_1 = 0, p_1 = 5000.000000
+ - ind = 4, y_4 = 1, p_4 = 1700.000000, f_b_4 = -2, c_b_4 = -1
+ - delta = 300.000000, stepsize = -2
+canddelta = -700.000000, candstepsize = -1
+-- var_3 ---
+p:k = 1
+ - ind = 1, y_1 = 0, p_1 = 4750.000000
+ - ind = 2, y_2 = -1, p_2 = 475.000000, f_b_2 = 1, c_b_2 = 2
+ - delta = 3800.000000, stepsize = 1
+canddelta = 0.000000, candstepsize = 0
+n:k = -1
+ - ind = 1, y_1 = 0, p_1 = 4750.000000
+ - ind = 2, y_2 = -1, p_2 = 475.000000
+ - delta = 950.000000, stepsize = -1
+canddelta = 0.000000, candstepsize = 0
+-- var_4 ---
+p:k = 1
+ - ind = 2, y_2 = -1, p_2 = 750.000000, f_b_2 = 1, c_b_2 = 2
+ - ind = 3, y_3 = 0, p_3 = 750.000000
+ - delta = 0.000000, stepsize = 1
+canddelta = 0.000000, candstepsize = 0
+n:k = -1
+ - ind = 2, y_2 = -1, p_2 = 750.000000
+ - ind = 3, y_3 = 0, p_3 = 750.000000
+ - delta = 1500.000000, stepsize = -1
+canddelta = 0.000000, candstepsize = 0
+-- var_5 ---
+p:k = 1
+ - ind = 3, y_3 = 0, p_3 = 750.000000
+ - ind = 4, y_4 = 1, p_4 = 2550.000000
+ - delta = 4350.000000, stepsize = 1
+canddelta = 0.000000, candstepsize = 0
+canddelta = 0.000000, candstepsize = 0
+-- var_6 ---
+p:k = 1
+ - ind = 0, y_0 = -10, p_0 = 7500.000000, f_b_0 = 10, c_b_0 = 11
+ - ind = 2, y_2 = -1, p_2 = 750.000000, f_b_2 = 1, c_b_2 = 2
+ - ind = 4, y_4 = 1, p_4 = 2550.000000
+ - delta = 1050.000000, stepsize = 1
+canddelta = 0.000000, candstepsize = 0
+canddelta = 0.000000, candstepsize = 0
+bestindex = 0, beststepsize = 5, bestdelta = -5000.000000
+**********************************
+var_x: 5 0 10 10 4 0 0 
+var_y: 0 0 -1 0 1 
+objval: 500.000
+**********************************
+penaltyrate: 5.000 5.000 0.500 0.500 1.800 
+-- var_0 ---
+p:k = 1
+ - ind = 0, y_0 = 0, p_0 = 5000.000000
+ - delta = 9000.000000, stepsize = 1
+canddelta = 0.000000, candstepsize = 0
+n:k = -1
+ - ind = 0, y_0 = 0, p_0 = 5000.000000
+ - delta = 1000.000000, stepsize = -1
+canddelta = 0.000000, candstepsize = 0
+-- var_1 ---
+p:k = 1
+ - ind = 0, y_0 = 0, p_0 = 7250.000000
+ - ind = 2, y_2 = -1, p_2 = 725.000000, f_b_2 = 0, c_b_2 = 1
+ - delta = 6525.000000, stepsize = 1
+canddelta = 0.000000, candstepsize = 0
+canddelta = 0.000000, candstepsize = 0
+-- var_2 ---
+p:k = 1
+ - ind = 1, y_1 = 0, p_1 = 5000.000000
+ - ind = 4, y_4 = 1, p_4 = 1800.000000
+ - delta = 5800.000000, stepsize = 1
+canddelta = 0.000000, candstepsize = 0
+n:k = -1
+ - ind = 1, y_1 = 0, p_1 = 5000.000000
+ - ind = 4, y_4 = 1, p_4 = 1800.000000, f_b_4 = -2, c_b_4 = -1
+ - delta = -800.000000, stepsize = -1
+n:k = -2
+ - ind = 1, y_1 = 0, p_1 = 5000.000000
+ - ind = 4, y_4 = 1, p_4 = 1800.000000, f_b_4 = -2, c_b_4 = -1
+ - delta = 200.000000, stepsize = -2
+canddelta = -800.000000, candstepsize = -1
+-- var_3 ---
+p:k = 1
+ - ind = 1, y_1 = 0, p_1 = 4750.000000
+ - ind = 2, y_2 = -1, p_2 = 475.000000, f_b_2 = 1, c_b_2 = 2
+ - delta = 3800.000000, stepsize = 1
+canddelta = 0.000000, candstepsize = 0
+n:k = -1
+ - ind = 1, y_1 = 0, p_1 = 4750.000000
+ - ind = 2, y_2 = -1, p_2 = 475.000000
+ - delta = 950.000000, stepsize = -1
+canddelta = 0.000000, candstepsize = 0
+-- var_4 ---
+p:k = 1
+ - ind = 2, y_2 = -1, p_2 = 750.000000, f_b_2 = 1, c_b_2 = 2
+ - ind = 3, y_3 = 0, p_3 = 750.000000
+ - delta = 0.000000, stepsize = 1
+canddelta = 0.000000, candstepsize = 0
+n:k = -1
+ - ind = 2, y_2 = -1, p_2 = 750.000000
+ - ind = 3, y_3 = 0, p_3 = 750.000000
+ - delta = 1500.000000, stepsize = -1
+canddelta = 0.000000, candstepsize = 0
+-- var_5 ---
+p:k = 1
+ - ind = 3, y_3 = 0, p_3 = 750.000000
+ - ind = 4, y_4 = 1, p_4 = 2700.000000
+ - delta = 4650.000000, stepsize = 1
+canddelta = 0.000000, candstepsize = 0
+canddelta = 0.000000, candstepsize = 0
+-- var_6 ---
+p:k = 1
+ - ind = 0, y_0 = 0, p_0 = 7500.000000
+ - ind = 2, y_2 = -1, p_2 = 750.000000, f_b_2 = 1, c_b_2 = 2
+ - ind = 4, y_4 = 1, p_4 = 2700.000000
+ - delta = 8700.000000, stepsize = 1
+canddelta = 0.000000, candstepsize = 0
+canddelta = 0.000000, candstepsize = 0
+bestindex = 2, beststepsize = -1, bestdelta = -800.000000
+**********************************
+var_x: 5 0 9 10 4 0 0 
+var_y: 0 -1 -1 0 0 
+objval: 1500.000
+**********************************
+update!
+penaltyrate: 5.000 5.000 0.500 0.500 1.800 
+-- var_0 ---
+p:k = 1
+ - ind = 0, y_0 = 0, p_0 = 5000.000000
+ - delta = 9000.000000, stepsize = 1
+canddelta = 0.000000, candstepsize = 0
+n:k = -1
+ - ind = 0, y_0 = 0, p_0 = 5000.000000
+ - delta = 1000.000000, stepsize = -1
+canddelta = 0.000000, candstepsize = 0
+-- var_1 ---
+p:k = 1
+ - ind = 0, y_0 = 0, p_0 = 7250.000000
+ - ind = 2, y_2 = -1, p_2 = 725.000000, f_b_2 = 0, c_b_2 = 1
+ - delta = 6525.000000, stepsize = 1
+canddelta = 0.000000, candstepsize = 0
+canddelta = 0.000000, candstepsize = 0
+-- var_2 ---
+p:k = 1
+ - ind = 1, y_1 = -1, p_1 = 5000.000000, f_b_1 = 1, c_b_1 = 2
+ - ind = 4, y_4 = 0, p_4 = 1800.000000
+ - delta = 800.000000, stepsize = 1
+canddelta = 0.000000, candstepsize = 0
+n:k = -1
+ - ind = 1, y_1 = -1, p_1 = 5000.000000
+ - ind = 4, y_4 = 0, p_4 = 1800.000000
+ - delta = 1000.000000, stepsize = -1
+canddelta = 0.000000, candstepsize = 0
+-- var_3 ---
+p:k = 1
+ - ind = 1, y_1 = -1, p_1 = 4750.000000, f_b_1 = 1, c_b_1 = 2
+ - ind = 2, y_2 = -1, p_2 = 475.000000, f_b_2 = 1, c_b_2 = 2
+ - delta = -950.000000, stepsize = 1
+p:k = 2
+ - ind = 1, y_1 = -1, p_1 = 4750.000000, f_b_1 = 1, c_b_1 = 2
+ - ind = 2, y_2 = -1, p_2 = 475.000000, f_b_2 = 1, c_b_2 = 2
+ - delta = 3325.000000, stepsize = 2
+canddelta = -950.000000, candstepsize = 1
+n:k = -1
+ - ind = 1, y_1 = -1, p_1 = 4750.000000
+ - ind = 2, y_2 = -1, p_2 = 475.000000
+ - delta = 950.000000, stepsize = -1
+canddelta = 0.000000, candstepsize = 0
+-- var_4 ---
+p:k = 1
+ - ind = 2, y_2 = -1, p_2 = 750.000000, f_b_2 = 1, c_b_2 = 2
+ - ind = 3, y_3 = 0, p_3 = 750.000000
+ - delta = 0.000000, stepsize = 1
+canddelta = 0.000000, candstepsize = 0
+n:k = -1
+ - ind = 2, y_2 = -1, p_2 = 750.000000
+ - ind = 3, y_3 = 0, p_3 = 750.000000
+ - delta = 1500.000000, stepsize = -1
+canddelta = 0.000000, candstepsize = 0
+-- var_5 ---
+p:k = 1
+ - ind = 3, y_3 = 0, p_3 = 750.000000
+ - ind = 4, y_4 = 0, p_4 = 2700.000000
+ - delta = 4650.000000, stepsize = 1
+canddelta = 0.000000, candstepsize = 0
+canddelta = 0.000000, candstepsize = 0
+-- var_6 ---
+p:k = 1
+ - ind = 0, y_0 = 0, p_0 = 7500.000000
+ - ind = 2, y_2 = -1, p_2 = 750.000000, f_b_2 = 1, c_b_2 = 2
+ - ind = 4, y_4 = 0, p_4 = 2700.000000
+ - delta = 8700.000000, stepsize = 1
+canddelta = 0.000000, candstepsize = 0
+canddelta = 0.000000, candstepsize = 0
+bestindex = 3, beststepsize = 1, bestdelta = -950.000000
+**********************************
+var_x: 5 0 9 11 4 0 0 
+var_y: 0 0 0 0 0 
+objval: 550.000
+**********************************
+update!
+penaltyrate: 5.000 5.000 0.500 0.500 1.800 
+-- var_0 ---
+p:k = 1
+ - ind = 0, y_0 = 0, p_0 = 5000.000000
+ - delta = 9000.000000, stepsize = 1
+canddelta = 0.000000, candstepsize = 0
+n:k = -1
+ - ind = 0, y_0 = 0, p_0 = 5000.000000
+ - delta = 1000.000000, stepsize = -1
+canddelta = 0.000000, candstepsize = 0
+-- var_1 ---
+p:k = 1
+ - ind = 0, y_0 = 0, p_0 = 7250.000000
+ - ind = 2, y_2 = 0, p_2 = 725.000000
+ - delta = 7250.000000, stepsize = 1
+canddelta = 0.000000, candstepsize = 0
+canddelta = 0.000000, candstepsize = 0
+-- var_2 ---
+p:k = 1
+ - ind = 1, y_1 = 0, p_1 = 5000.000000
+ - ind = 4, y_4 = 0, p_4 = 1800.000000
+ - delta = 5800.000000, stepsize = 1
+canddelta = 0.000000, candstepsize = 0
+n:k = -1
+ - ind = 1, y_1 = 0, p_1 = 5000.000000
+ - ind = 4, y_4 = 0, p_4 = 1800.000000
+ - delta = 1000.000000, stepsize = -1
+canddelta = 0.000000, candstepsize = 0
+-- var_3 ---
+p:k = 1
+ - ind = 1, y_1 = 0, p_1 = 4750.000000
+ - ind = 2, y_2 = 0, p_2 = 475.000000
+ - delta = 4275.000000, stepsize = 1
+canddelta = 0.000000, candstepsize = 0
+n:k = -1
+ - ind = 1, y_1 = 0, p_1 = 4750.000000
+ - ind = 2, y_2 = 0, p_2 = 475.000000
+ - delta = 950.000000, stepsize = -1
+canddelta = 0.000000, candstepsize = 0
+-- var_4 ---
+p:k = 1
+ - ind = 2, y_2 = 0, p_2 = 750.000000
+ - ind = 3, y_3 = 0, p_3 = 750.000000
+ - delta = 750.000000, stepsize = 1
+canddelta = 0.000000, candstepsize = 0
+n:k = -1
+ - ind = 2, y_2 = 0, p_2 = 750.000000
+ - ind = 3, y_3 = 0, p_3 = 750.000000
+ - delta = 1500.000000, stepsize = -1
+canddelta = 0.000000, candstepsize = 0
+-- var_5 ---
+p:k = 1
+ - ind = 3, y_3 = 0, p_3 = 750.000000
+ - ind = 4, y_4 = 0, p_4 = 2700.000000
+ - delta = 4650.000000, stepsize = 1
+canddelta = 0.000000, candstepsize = 0
+canddelta = 0.000000, candstepsize = 0
+-- var_6 ---
+p:k = 1
+ - ind = 0, y_0 = 0, p_0 = 7500.000000
+ - ind = 2, y_2 = 0, p_2 = 750.000000
+ - ind = 4, y_4 = 0, p_4 = 2700.000000
+ - delta = 9450.000000, stepsize = 1
+canddelta = 0.000000, candstepsize = 0
+canddelta = 0.000000, candstepsize = 0
+bestindex = -1, beststepsize = 0, bestdelta = 0.000000
+**********************************
+var_x: 5 0 9 11 4 0 0 
+var_y: 0 0 0 0 0 
+objval: 550.000
+**********************************

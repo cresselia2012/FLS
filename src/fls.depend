@@ -1,0 +1,20 @@
+$(OBJDIR)/main.o: $(SRCDIR)/main.cpp \
+ $(SRCDIR)/read_data.h \
+ $(SRCDIR)/probdata.h
+$(OBJDIR)/probdata.o: $(SRCDIR)/probdata.cpp $(SRCDIR)/probdata.h \
+ $(SRCDIR)/vector.h
+$(OBJDIR)/read_data.o: $(SRCDIR)/read_data.cpp $(SRCDIR)/read_data.h \
+ $(SRCDIR)/probdata.h
+$(OBJDIR)/fls.o: $(SRCDIR)/fls.h $(SRCDIR)/fls.cpp \
+ $(SRCDIR)/probdata.h \
+ $(SRCDIR)/vector.h \
+ $(SRCDIR)/solution.h
+$(OBJDIR)/solution.o: $(SRCDIR)/solution.h $(SRCDIR)/solution.cpp \
+ $(SRCDIR)/vector.h \
+ $(SRCDIR)/probdata.h
+$(OBJDIR)/fls_search.o: $(SRCDIR)/fls.h $(SRCDIR)/fls_search.cpp \
+ $(SRCDIR)/probdata.h \
+ $(SRCDIR)/vector.h \
+ $(SRCDIR)/solution.h
+
+
